@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-class AwsSamCli < Formula
+class AwsSamCliAT1120 < Formula
   include Language::Python::Virtualenv
 
   desc "AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications"
