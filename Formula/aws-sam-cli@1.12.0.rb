@@ -16,6 +16,7 @@ class AwsSamCliAT1120 < Formula
   conflicts_with 'aws-sam-cli', :because => "both install the 'sam' binary"
 
   bottle do
+    name "aws-sam-cli"
     root_url config_provider.root_url()
     cellar :any_skip_relocation
     sha256 config_provider.sierra_hash() => :sierra
