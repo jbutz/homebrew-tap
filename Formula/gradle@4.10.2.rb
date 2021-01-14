@@ -8,7 +8,10 @@ class GradleAT4102 < Formula
 
   option "with-all", "Installs Javadoc, examples, and source in addition to the binaries"
 
-  depends_on :java => "1.7+"
+  #depends_on :java => "1.7+"
+  #depends_on "openjdk@11"
+  #depends_on "openjdk@8"
+  depends_on "openjdk"
 
   def install
     rm_f Dir["bin/*.bat"]
