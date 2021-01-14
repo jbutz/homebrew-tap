@@ -5,15 +5,15 @@ class AwsSamCli < Formula
 
   desc "AWS SAM CLI 🐿 is a tool for local development and testing of Serverless applications"
   homepage "https://github.com/awslabs/aws-sam-cli/"
-  url https://api.github.com/repos/aws/aws-sam-cli/tarball/v1.12.0
-  sha256 7be0497d24fc1539d6b8f8258a9756610a37f135ee42defd81049755e0bf00cd
+  url "https://api.github.com/repos/aws/aws-sam-cli/tarball/v1.12.0"
+  sha256 "7be0497d24fc1539d6b8f8258a9756610a37f135ee42defd81049755e0bf00cd"
   head "https://github.com/awslabs/aws-sam-cli.git", :branch => "develop"
 
   conflicts_with 'aws-sam-cli-rc', :because => "both install the 'sam' binary"
   conflicts_with 'aws-sam-cli', :because => "both install the 'sam' binary"
 
   bottle do
-    root_url https://github.com/aws/aws-sam-cli/releases/download/v1.12.0/
+    root_url "https://github.com/aws/aws-sam-cli/releases/download/v1.12.0/"
     cellar :any_skip_relocation
     sha256 "08c4c1e5713fa452d30c842230b7033099bd9694aa8b8023975d9854f6eaf96f" => :sierra
     sha256 "a8f74a580dfa67c51eaa9b5ac55850c631c377e08a66763da0fbc4d0a658d88a" => :x86_64_linux
