@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 require_relative '../ConfigProvider/config_provider'
 
-class AwsSamCli < Formula
+class AwsSamCliButz < Formula
   include Language::Python::Virtualenv
 
   config_provider = ConfigProvider.new('aws-sam-cli')
